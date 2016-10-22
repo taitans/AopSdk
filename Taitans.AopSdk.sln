@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{9967BC3A-4898-44BF-B225-0CE73EFC33FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{A85E824E-30AA-408D-AE74-DD2C193AD0A3}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\nuget.exe = .nuget\nuget.exe
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "nupkg", "nupkg", "{8134BCD2-912E-4F83-9287-9A63D72D58E2}"
+	ProjectSection(SolutionItems) = preProject
+		nupkg\pack-alipay.bat = nupkg\pack-alipay.bat
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{1D5125D1-E6B5-4AD4-BA43-E17AB8B94B53}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taitans.AopSdk", "src\Taitans.AopSdk\Taitans.AopSdk.csproj", "{78451F35-AEAC-4B4A-A66C-638E04EE3ABF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Titans.AopSdk.Tests", "test\Taitans.AopSdk.Tests\Titans.AopSdk.Tests.csproj", "{3AE2634B-89AA-4F25-9F1B-D4F6E607B942}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{78451F35-AEAC-4B4A-A66C-638E04EE3ABF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78451F35-AEAC-4B4A-A66C-638E04EE3ABF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78451F35-AEAC-4B4A-A66C-638E04EE3ABF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78451F35-AEAC-4B4A-A66C-638E04EE3ABF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3AE2634B-89AA-4F25-9F1B-D4F6E607B942}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AE2634B-89AA-4F25-9F1B-D4F6E607B942}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AE2634B-89AA-4F25-9F1B-D4F6E607B942}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AE2634B-89AA-4F25-9F1B-D4F6E607B942}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{78451F35-AEAC-4B4A-A66C-638E04EE3ABF} = {9967BC3A-4898-44BF-B225-0CE73EFC33FA}
+		{3AE2634B-89AA-4F25-9F1B-D4F6E607B942} = {1D5125D1-E6B5-4AD4-BA43-E17AB8B94B53}
+	EndGlobalSection
+EndGlobal
