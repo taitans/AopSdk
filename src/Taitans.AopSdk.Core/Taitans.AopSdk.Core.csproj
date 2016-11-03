@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{AF513F5E-C0EF-4C25-83C3-47F71CD34CAE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Taitans.AopSdk.Core</RootNamespace>
+    <AssemblyName>Taitans.AopSdk.Core</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.8\lib\net35\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Domain\AlipayTradeAppPayModel.cs" />
+    <Compile Include="Domain\AlipayTradeCancelModel.cs" />
+    <Compile Include="Domain\AlipayTradeCloseModel.cs" />
+    <Compile Include="Domain\AlipayTradeCreateModel.cs" />
+    <Compile Include="Domain\AlipayTradeFastpayRefundQueryModel.cs" />
+    <Compile Include="Domain\AlipayTradeOrderMobilepayModel.cs" />
+    <Compile Include="Domain\AlipayTradeOrderSettleModel.cs" />
+    <Compile Include="Domain\AlipayTradePayModel.cs" />
+    <Compile Include="Domain\AlipayTradePrecreateModel.cs" />
+    <Compile Include="Domain\AlipayTradeQueryModel.cs" />
+    <Compile Include="Domain\AlipayTradeRefundModel.cs" />
+    <Compile Include="Domain\AopObject.cs" />
+    <Compile Include="Domain\ExtendParams.cs" />
+    <Compile Include="Domain\GoodsDetail.cs" />
+    <Compile Include="Domain\OpenApiRoyaltyDetailInfoPojo.cs" />
+    <Compile Include="Domain\RoyaltyDetailInfos.cs" />
+    <Compile Include="Domain\RoyaltyInfo.cs" />
+    <Compile Include="Domain\SubMerchant.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="E:\Engineer\AopSdk\src\Taitans.AopSdk\Taitans.AopSdk.csproj">
+      <Project>{78451F35-AEAC-4B4A-A66C-638E04EE3ABF}</Project>
+      <Name>Taitans.AopSdk</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
