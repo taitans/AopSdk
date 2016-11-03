@@ -1,18 +1,18 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Taitans.AopSdk</id>
+    <id>Taitans.AopSdk.Core</id>
     <version>$version$</version>
     <authors>Taitans</authors>
-    <title>Taitans.AopSdk</title>
+    <title>Taitans.AopSdk.Core</title>
     <owners>ttgzs</owners>
     <licenseUrl>https://github.com/taitans/AopSdk/blob/master/LICENSE</licenseUrl>
     <projectUrl>https://github.com/taitans/AopSdk</projectUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <description>移植Alipay Sdk 到 mono 平台下。</description>
+    <description>Taitans.AopSdk extension.</description>
     <language>zh-CN</language>
     <dependencies>
-      <dependency id="BouncyCastle" version="1.8.1"/>
+      <dependency id="Newtonsoft.Json" version="6.0.8"/>
     </dependencies>
     <copyright>Copyright © Taitans 2016</copyright>
     <tags>Taitans SDK Alipay Mono 支付宝</tags>
