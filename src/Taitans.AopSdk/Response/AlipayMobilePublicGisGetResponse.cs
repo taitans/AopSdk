@@ -24,7 +24,7 @@ namespace Aop.Api.Response
         /// 结果码
         /// </summary>
         [XmlElement("code")]
-        public new string Code { get; set; }
+        public string Code { get; set; }
 
         /// <summary>
         /// 纬度信息
@@ -42,7 +42,7 @@ namespace Aop.Api.Response
         /// 结果信息
         /// </summary>
         [XmlElement("msg")]
-        public new string Msg { get; set; }
+        public string Msg { get; set; }
 
         /// <summary>
         /// 经纬度对应位置所在的省份

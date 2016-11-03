@@ -11,13 +11,13 @@ namespace Aop.Api.Response
     public class AlipayTradeQueryResponse : AopResponse
     {
         /// <summary>
-        /// 支付宝店铺编�?
+        /// 支付宝店铺编号
         /// </summary>
         [XmlElement("alipay_store_id")]
         public string AlipayStoreId { get; set; }
 
         /// <summary>
-        /// 买家支付宝账�?
+        /// 买家支付宝账号
         /// </summary>
         [XmlElement("buyer_logon_id")]
         public string BuyerLogonId { get; set; }
@@ -35,20 +35,20 @@ namespace Aop.Api.Response
         public string BuyerUserId { get; set; }
 
         /// <summary>
-        /// 本次交易支付所使用的单品券优惠的商品优惠信�?
+        /// 本次交易支付所使用的单品券优惠的商品优惠信息
         /// </summary>
         [XmlElement("discount_goods_detail")]
         public string DiscountGoodsDetail { get; set; }
 
         /// <summary>
-        /// 交易支付使用的资金渠�?
+        /// 交易支付使用的资金渠道
         /// </summary>
         [XmlArray("fund_bill_list")]
         [XmlArrayItem("trade_fund_bill")]
         public List<TradeFundBill> FundBillList { get; set; }
 
         /// <summary>
-        /// 行业特殊信息（例如在医保卡支付业务中，向用户返回医疗信息）�?
+        /// 行业特殊信息（例如在医保卡支付业务中，向用户返回医疗信息）。
         /// </summary>
         [XmlElement("industry_sepc_detail")]
         public string IndustrySepcDetail { get; set; }
@@ -66,19 +66,19 @@ namespace Aop.Api.Response
         public string OpenId { get; set; }
 
         /// <summary>
-        /// 商家订单�?
+        /// 商家订单号
         /// </summary>
         [XmlElement("out_trade_no")]
         public string OutTradeNo { get; set; }
 
         /// <summary>
-        /// 积分支付的金额，单位为元，两位小数。该金额代表该笔交易中用户使用积分支付的金额，比如集分宝或者支付宝实时优惠�?
+        /// 积分支付的金额，单位为元，两位小数。该金额代表该笔交易中用户使用积分支付的金额，比如集分宝或者支付宝实时优惠等
         /// </summary>
         [XmlElement("point_amount")]
         public string PointAmount { get; set; }
 
         /// <summary>
-        /// 实收金额，单位为元，两位小数。该金额为本笔交易，商户账户能够实际收到的金�?
+        /// 实收金额，单位为元，两位小数。该金额为本笔交易，商户账户能够实际收到的金额
         /// </summary>
         [XmlElement("receipt_amount")]
         public string ReceiptAmount { get; set; }
@@ -96,7 +96,7 @@ namespace Aop.Api.Response
         public string StoreId { get; set; }
 
         /// <summary>
-        /// 请求交易支付中的商户店铺的名�?
+        /// 请求交易支付中的商户店铺的名称
         /// </summary>
         [XmlElement("store_name")]
         public string StoreName { get; set; }
@@ -124,5 +124,12 @@ namespace Aop.Api.Response
         /// </summary>
         [XmlElement("trade_status")]
         public string TradeStatus { get; set; }
+
+        /// <summary>
+        /// 本交易支付时使用的所有优惠券信息
+        /// </summary>
+        [XmlArray("voucher_detail_list")]
+        [XmlArrayItem("voucher_detail")]
+        public List<VoucherDetail> VoucherDetailList { get; set; }
     }
 }

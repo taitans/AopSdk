@@ -36,6 +36,13 @@ namespace Aop.Api.Domain
         public string Desc { get; set; }
 
         /// <summary>
+        /// 券使用说明描述列表
+        /// </summary>
+        [XmlArray("desc_detail_list")]
+        [XmlArrayItem("voucher_desc_detail")]
+        public List<VoucherDescDetail> DescDetailList { get; set; }
+
+        /// <summary>
         /// 券的展示信息
         /// </summary>
         [XmlElement("display_config")]
@@ -82,6 +89,12 @@ namespace Aop.Api.Domain
         /// </summary>
         [XmlElement("max_amount")]
         public string MaxAmount { get; set; }
+
+        /// <summary>
+        /// 券核销叠加标识
+        /// </summary>
+        [XmlElement("merge_verify_config")]
+        public MergeVerifyConfig MergeVerifyConfig { get; set; }
 
         /// <summary>
         /// 名称

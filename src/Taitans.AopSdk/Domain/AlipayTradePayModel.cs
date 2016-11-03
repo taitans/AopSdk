@@ -48,6 +48,12 @@ namespace Aop.Api.Domain
         public List<GoodsDetail> GoodsDetail { get; set; }
 
         /// <summary>
+        /// 商户的原始订单号
+        /// </summary>
+        [XmlElement("merchant_order_no")]
+        public string MerchantOrderNo { get; set; }
+
+        /// <summary>
         /// 商户操作员编号
         /// </summary>
         [XmlElement("operator_id")]

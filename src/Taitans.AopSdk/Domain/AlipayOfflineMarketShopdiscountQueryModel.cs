@@ -4,10 +4,10 @@ using System.Xml.Serialization;
 namespace Aop.Api.Domain
 {
     /// <summary>
-    /// AlipayOfflineMarketShopdiscountQueryModel Data Structure.
+    /// AlipayOfflineMarketShopDiscountQueryModel Data Structure.
     /// </summary>
     [Serializable]
-    public class AlipayOfflineMarketShopdiscountQueryModel : AopObject
+    public class AlipayOfflineMarketShopDiscountQueryModel : AopObject
     {
         /// <summary>
         /// 门店id

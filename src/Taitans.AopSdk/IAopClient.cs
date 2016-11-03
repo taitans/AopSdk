@@ -52,5 +52,11 @@ namespace Aop.Api
         /// <param name="session">用户会话码</param>
         /// <returns>领域对象</returns>
         T pageExecute<T>(IAopRequest<T> request, string session, string reqMethod) where T : AopResponse;
+
+        /// <summary>
+        /// 设置回跳地址
+        /// </summary>
+        /// <param name="returnUrl"></param>
+        void SetReturnUrl(string returnUrl);
     }
 }

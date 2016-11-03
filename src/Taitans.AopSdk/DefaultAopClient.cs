@@ -542,6 +542,11 @@ namespace Aop.Api
 
             return prestr.ToString();
         }
+
+        public void SetReturnUrl(string returnUrl)
+        {
+            return_url = returnUrl;
+        }
         #endregion
     }
 }

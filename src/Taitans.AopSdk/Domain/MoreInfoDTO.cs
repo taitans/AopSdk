@@ -11,7 +11,7 @@ namespace Aop.Api.Domain
     public class MoreInfoDTO : AopObject
     {
         /// <summary>
-        /// opennative时填写
+        /// 选择opennative的时候必须填写descs的内容
         /// </summary>
         [XmlArray("descs")]
         [XmlArrayItem("string")]
@@ -30,7 +30,7 @@ namespace Aop.Api.Domain
         public string Title { get; set; }
 
         /// <summary>
-        /// 超链接(openweb时填)
+        /// 超链接(选择openweb的时候必须填写url参数内容)
         /// </summary>
         [XmlElement("url")]
         public string Url { get; set; }

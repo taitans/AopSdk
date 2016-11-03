@@ -34,6 +34,12 @@ namespace Aop.Api.Domain
         public string ItemId { get; set; }
 
         /// <summary>
+        /// 子类型
+        /// </summary>
+        [XmlElement("promo_sub_type")]
+        public string PromoSubType { get; set; }
+
+        /// <summary>
         /// 优惠类型。  优惠：discount  商品：item
         /// </summary>
         [XmlElement("promotion_type")]

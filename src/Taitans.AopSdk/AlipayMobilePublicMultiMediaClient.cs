@@ -224,5 +224,10 @@ namespace Aop.Api
         {
             throw new NotImplementedException();
         }
+
+        public void SetReturnUrl(string returnUrl)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -14,5 +14,11 @@ namespace Aop.Api.Response
         /// </summary>
         [XmlElement("card_info")]
         public MerchantCard CardInfo { get; set; }
+
+        /// <summary>
+        /// 商户会员卡页面跳转到支付宝卡券详情页面的schema地址
+        /// </summary>
+        [XmlElement("schema_url")]
+        public string SchemaUrl { get; set; }
     }
 }

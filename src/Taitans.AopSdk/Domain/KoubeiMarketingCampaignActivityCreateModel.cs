@@ -11,13 +11,7 @@ namespace Aop.Api.Domain
     public class KoubeiMarketingCampaignActivityCreateModel : AopObject
     {
         /// <summary>
-        /// 是否自动续期活动，默认为N,只有当对应营销工具券有效期为相对有效期时才能设置成Y
-        /// </summary>
-        [XmlElement("auto_delay_flag")]
-        public string AutoDelayFlag { get; set; }
-
-        /// <summary>
-        /// 活动预算（当活动类型为GUESS_SEND且营销工具PromoTool的数量大于1时，即口令随机送活动，活动预算为空，每张券的预算数量落在SendRule里的send_budget）
+        /// 活动预算
         /// </summary>
         [XmlElement("budget_info")]
         public BudgetInfo BudgetInfo { get; set; }
@@ -65,7 +59,7 @@ namespace Aop.Api.Domain
         public string OperatorType { get; set; }
 
         /// <summary>
-        /// 外部批次ID，同一owner创建活动需要换out_biz_no，控制幂等
+        /// 外部批次ID
         /// </summary>
         [XmlElement("out_biz_no")]
         public string OutBizNo { get; set; }
@@ -78,7 +72,7 @@ namespace Aop.Api.Domain
         public List<PromoTool> PromoTools { get; set; }
 
         /// <summary>
-        /// 投放渠道集，当活动类型为DIRECT_SEND或者REAL_TIME_SEND时必填，当活动类型为CONSUME_SEND时必须为空，当活动类型为GUESS_SEND时，投放渠道只能有一个且type只能为MERCHANT_CROWD
+        /// 投放渠道集，当活动类型为DIRECT_SEND或者REAL_TIME_SEND时必填，当活动类型为CONSUME_SEND时必须为空
         /// </summary>
         [XmlArray("publish_channels")]
         [XmlArrayItem("publish_channel")]
@@ -97,7 +91,7 @@ namespace Aop.Api.Domain
         public string StartTime { get; set; }
 
         /// <summary>
-        /// 活动类型，目前支持以下类型：  CONSUME_SEND：消费送活动  DIRECT_SEND：直发奖活动  REAL_TIME_SEND：实时立减类活动  GUESS_SEND：口令送
+        /// 活动类型，目前支持以下类型：  CONSUME_SEND：消费送活动  DIRECT_SEND：直发奖活动  REAL_TIME_SEND：实时立减类活动
         /// </summary>
         [XmlElement("type")]
         public string Type { get; set; }

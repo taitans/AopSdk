@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// 返回结果码，如200，标识成功
         /// </summary>
         [XmlElement("code")]
-        public new string Code { get; set; }
+        public string Code { get; set; }
 
         /// <summary>
         /// 图片地址
@@ -30,6 +30,6 @@ namespace Aop.Api.Response
         /// 结果吗描述信息
         /// </summary>
         [XmlElement("msg")]
-        public new string Msg { get; set; }
+        public string Msg { get; set; }
     }
 }

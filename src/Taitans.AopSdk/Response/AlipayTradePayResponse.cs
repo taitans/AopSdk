@@ -100,5 +100,12 @@ namespace Aop.Api.Response
         /// </summary>
         [XmlElement("trade_no")]
         public string TradeNo { get; set; }
+
+        /// <summary>
+        /// 本交易支付时使用的所有优惠券信息
+        /// </summary>
+        [XmlArray("voucher_detail_list")]
+        [XmlArrayItem("voucher_detail")]
+        public List<VoucherDetail> VoucherDetailList { get; set; }
     }
 }

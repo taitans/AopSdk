@@ -22,7 +22,7 @@ namespace Aop.Api.Domain
         public MoreInfoDTO MoreInfo { get; set; }
 
         /// <summary>
-        /// 操作类型
+        /// 1、openNative：打开二级页面，展现 more中descs  2、openWeb：打开URL  3、staticinfo：静态信息
         /// </summary>
         [XmlElement("operate_type")]
         public string OperateType { get; set; }
@@ -34,7 +34,7 @@ namespace Aop.Api.Domain
         public string Title { get; set; }
 
         /// <summary>
-        /// 栏位右边展现的值
+        /// 卡包详情页面，卡栏位右边展现的值
         /// </summary>
         [XmlElement("value")]
         public string Value { get; set; }

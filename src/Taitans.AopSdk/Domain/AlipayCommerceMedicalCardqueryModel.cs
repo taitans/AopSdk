@@ -4,10 +4,10 @@ using System.Xml.Serialization;
 namespace Aop.Api.Domain
 {
     /// <summary>
-    /// AlipayCommerceMedicalCardqueryModel Data Structure.
+    /// AlipayCommerceMedicalCardQueryModel Data Structure.
     /// </summary>
     [Serializable]
-    public class AlipayCommerceMedicalCardqueryModel : AopObject
+    public class AlipayCommerceMedicalCardQueryModel : AopObject
     {
         /// <summary>
         /// 买家支付宝账号对应的支付宝唯一用户号。  以2088开头的纯16位数字。

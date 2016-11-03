@@ -9,7 +9,7 @@ namespace Aop.Api.Response
     public class AlipayMarketingCampaignDrawcampCreateResponse : AopResponse
     {
         /// <summary>
-        /// 活动id
+        /// 抽奖活动id
         /// </summary>
         [XmlElement("camp_id")]
         public string CampId { get; set; }

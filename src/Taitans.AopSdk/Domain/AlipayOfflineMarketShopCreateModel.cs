@@ -142,7 +142,7 @@ namespace Aop.Api.Domain
         public string IsvUid { get; set; }
 
         /// <summary>
-        /// 纬度；最长15位字符（包括小数点）， 注：高德坐标系。经纬度是门店搜索和活动推荐的重要参数，录入时请确保经纬度参数准确。
+        /// 纬度；最长15位字符（包括小数点）， 注：高德坐标系。经纬度是门店搜索和活动推荐的重要参数，录入时请确保经纬度参数准确。高德经纬度查询：http://lbs.amap.com/console/show/picker
         /// </summary>
         [XmlElement("latitude")]
         public string Latitude { get; set; }
@@ -178,7 +178,7 @@ namespace Aop.Api.Domain
         public string LicenceName { get; set; }
 
         /// <summary>
-        /// 经度；最长15位字符（包括小数点）， 注：高德坐标系。经纬度是门店搜索和活动推荐的重要参数，录入时请确保经纬度参数准确。
+        /// 经度；最长15位字符（包括小数点）， 注：高德坐标系。经纬度是门店搜索和活动推荐的重要参数，录入时请确保经纬度参数准确。高德经纬度查询：http://lbs.amap.com/console/show/picker
         /// </summary>
         [XmlElement("longitude")]
         public long Longitude { get; set; }

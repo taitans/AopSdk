@@ -16,7 +16,7 @@ namespace Aop.Api.Domain
         public string FieldName { get; set; }
 
         /// <summary>
-        /// 对应于field_name的字段值，当field_name为status时，field_value支持CREATED，ENABLED，DISABLED，STARTED，CLOSED,FINISHED几种值，用|分隔，代表查询这些状态中的活动,field_name为name时候value表示要查询的活动名，field_name为时间时,field_value为开始或结束时间，格式如2016-10-01 00:00:00
+        /// 对应于field_name的字段值，当field_name为status时，field_value支持STARTED、STARTING、MODIFYING、CLOSED、CLOSING、DISABLED几种值，用|分隔，代表查询这些状态中的活动，此时operator只能为IN,field_name为name时候value表示要查询的活动名，field_name为时间时,field_value为开始或结束时间，格式如2016-10-01 00:00:00
         /// </summary>
         [XmlElement("field_value")]
         public string FieldValue { get; set; }

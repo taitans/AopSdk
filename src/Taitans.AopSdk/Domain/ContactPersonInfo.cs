@@ -26,5 +26,11 @@ namespace Aop.Api.Domain
         /// </summary>
         [XmlElement("contact_name")]
         public string ContactName { get; set; }
+
+        /// <summary>
+        /// 联系人类型，MERCHANT_CONTACT (普通联系人),DATA_RETURN (数据反馈联系人),PROT_CONTACT(客服人员),OBJECTION_HANDLE (异议处理联系人)，如不填默认为MERCHANT_CONTACT
+        /// </summary>
+        [XmlElement("contact_type")]
+        public string ContactType { get; set; }
     }
 }

@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// 结果码
         /// </summary>
         [XmlElement("code")]
-        public new string Code { get; set; }
+        public string Code { get; set; }
 
         /// <summary>
         /// id字典，key为userId和老的openId，value为新的openId
@@ -24,6 +24,6 @@ namespace Aop.Api.Response
         /// 结果描述
         /// </summary>
         [XmlElement("msg")]
-        public new string Msg { get; set; }
+        public string Msg { get; set; }
     }
 }

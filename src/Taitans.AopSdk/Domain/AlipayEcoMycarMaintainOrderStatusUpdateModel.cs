@@ -4,10 +4,10 @@ using System.Xml.Serialization;
 namespace Aop.Api.Domain
 {
     /// <summary>
-    /// AlipayEcoMycarMaintainOrderStatusUpdateModel Data Structure.
+    /// AlipayEcoMycarMaintainOrderstatusUpdateModel Data Structure.
     /// </summary>
     [Serializable]
-    public class AlipayEcoMycarMaintainOrderStatusUpdateModel : AopObject
+    public class AlipayEcoMycarMaintainOrderstatusUpdateModel : AopObject
     {
         /// <summary>
         /// 扩展参数

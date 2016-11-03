@@ -16,25 +16,25 @@ namespace Aop.Api.Domain
         public string ExtInfo { get; set; }
 
         /// <summary>
-        /// 商户端删卡业务流水号。
+        /// 商户端删卡业务流水号（商户确保流水号唯一性）
         /// </summary>
         [XmlElement("out_serial_no")]
         public string OutSerialNo { get; set; }
 
         /// <summary>
-        /// 删卡原因  USER_UNBUND：用户解绑  CANCEL：销户  PRESENT：转赠
+        /// 删卡原因  USER_UNBUND：用户解绑（可以重新绑定）  CANCEL：销户（完成销户后，就不能再重新绑定）  PRESENT：转赠（可以重新绑定）
         /// </summary>
         [XmlElement("reason_code")]
         public string ReasonCode { get; set; }
 
         /// <summary>
-        /// 商户会员卡号
+        /// 支付宝业务卡号，开卡接口中返回获取
         /// </summary>
         [XmlElement("target_card_no")]
         public string TargetCardNo { get; set; }
 
         /// <summary>
-        /// 卡号ID类型  EXTERNAL_CARD：商户卡号  BIZ_CARD：支付宝卡号
+        /// 卡号ID类型  BIZ_CARD：支付宝卡号
         /// </summary>
         [XmlElement("target_card_no_type")]
         public string TargetCardNoType { get; set; }

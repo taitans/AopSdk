@@ -17,7 +17,7 @@ namespace Aop.Api.Domain
         public string OperatorId { get; set; }
 
         /// <summary>
-        /// 结算请求流水号
+        /// 结算请求流水号 开发者自行生成并保证唯一性
         /// </summary>
         [XmlElement("out_request_no")]
         public string OutRequestNo { get; set; }

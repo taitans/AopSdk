@@ -12,7 +12,7 @@ namespace Aop.Api.Response
         /// success
         /// </summary>
         [XmlElement("code")]
-        public new string Code { get; set; }
+        public string Code { get; set; }
 
         /// <summary>
         /// 菜单内容
@@ -24,6 +24,6 @@ namespace Aop.Api.Response
         /// 成功
         /// </summary>
         [XmlElement("msg")]
-        public new string Msg { get; set; }
+        public string Msg { get; set; }
     }
 }

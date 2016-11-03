@@ -16,6 +16,12 @@ namespace Aop.Api.Domain
         public string ActionName { get; set; }
 
         /// <summary>
+        /// 模板中占位符的值及文字颜色，value和color都为必填项，color为当前文字颜色
+        /// </summary>
+        [XmlElement("first")]
+        public Keyword First { get; set; }
+
+        /// <summary>
         /// 顶部色条的色值
         /// </summary>
         [XmlElement("head_color")]
@@ -32,6 +38,12 @@ namespace Aop.Api.Domain
         /// </summary>
         [XmlElement("keyword2")]
         public Keyword Keyword2 { get; set; }
+
+        /// <summary>
+        /// 模板中占位符的值及文字颜色，value和color都为必填项，color为当前文字颜色
+        /// </summary>
+        [XmlElement("remark")]
+        public Keyword Remark { get; set; }
 
         /// <summary>
         /// 点击消息后承接页的地址
