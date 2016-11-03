@@ -13,6 +13,7 @@
     <language>zh-CN</language>
     <dependencies>
       <dependency id="Newtonsoft.Json" version="6.0.8"/>
+      <dependency id="Taitans.AopSdk" version="1.0.0.11032"/>
     </dependencies>
     <copyright>Copyright © Taitans 2016</copyright>
     <tags>Taitans SDK Alipay Mono 支付宝</tags>
