@@ -21,6 +21,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taitans.AopSdk", "src\Taita
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Titans.AopSdk.Tests", "test\Taitans.AopSdk.Tests\Titans.AopSdk.Tests.csproj", "{3AE2634B-89AA-4F25-9F1B-D4F6E607B942}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taitans.AopSdk.Core", "src\Taitans.AopSdk.Core\Taitans.AopSdk.Core.csproj", "{AF513F5E-C0EF-4C25-83C3-47F71CD34CAE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +37,10 @@ Global
 		{3AE2634B-89AA-4F25-9F1B-D4F6E607B942}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AE2634B-89AA-4F25-9F1B-D4F6E607B942}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AE2634B-89AA-4F25-9F1B-D4F6E607B942}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AF513F5E-C0EF-4C25-83C3-47F71CD34CAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AF513F5E-C0EF-4C25-83C3-47F71CD34CAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AF513F5E-C0EF-4C25-83C3-47F71CD34CAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AF513F5E-C0EF-4C25-83C3-47F71CD34CAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -42,5 +48,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{78451F35-AEAC-4B4A-A66C-638E04EE3ABF} = {9967BC3A-4898-44BF-B225-0CE73EFC33FA}
 		{3AE2634B-89AA-4F25-9F1B-D4F6E607B942} = {1D5125D1-E6B5-4AD4-BA43-E17AB8B94B53}
+		{AF513F5E-C0EF-4C25-83C3-47F71CD34CAE} = {9967BC3A-4898-44BF-B225-0CE73EFC33FA}
 	EndGlobalSection
 EndGlobal

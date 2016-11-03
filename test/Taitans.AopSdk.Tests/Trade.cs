@@ -5,6 +5,7 @@ using Aop.Api.Request;
 using Aop.Api.Response;
 using System.IO;
 using Newtonsoft.Json;
+using Aop.Api.Util;
 
 namespace Titans.AopSdk.Tests
 {
@@ -60,7 +61,7 @@ YVh/E4J2hSJUXqaxX/ECQDk7UXLc/lwP9AKcnhTYhLo8MCH8Ifz21CgR7tDmk5mD
             AlipayTradeQueryRequest request = new AlipayTradeQueryRequest();
             request.BizContent = "{" +
             "    \"out_trade_no\":\"20150320010101001\"," +
-            "    \"trade_no\":\"2014112611001004680 073956707\"" +
+            "    \"trade_no\":\"2014112611001073956707\"" +
             "  }";
 
             AlipayTradeQueryResponse response = client.Execute(request);
@@ -191,6 +192,20 @@ YVh/E4J2hSJUXqaxX/ECQDk7UXLc/lwP9AKcnhTYhLo8MCH8Ifz21CgR7tDmk5mD
             }
 
             Assert.IsFalse(response.IsError);
+        }
+
+        [TestMethod]
+        public void Check()
+        {
+            string publickey = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDIgHnOn7LLILlKETd6BFRJ0GqgS2Y3mn1wMQmyh9zEyWlz5p1zrahRahbXAfCfSqshSNfqOmAQzSHRVjCqjsAw1jyqrXaPdKBmr90DIpIxmIyKXv4GGAkPyJ/6FTFY99uhpiq0qadD/uSzQsefWo0aTvP/65zi3eof7TcZ32oWpwIDAQAB";
+
+            string sign = "jKRnSXLbf1d+KSv8xIWO3gDRUKcmOemLt0laeIZDelZqETRa/bGlmqFQmt/CF2sRxuXHqZx3Gs5MG+X3dFCUp+ypm5dRlvmKqEi/Pz0XV2/E7eva42gltNx76i2MPA83SlB7zS+N+0ZkARLok4KRofHl72vtGIWCxCZFJhHIlsE=";
+
+            string signcontent = "app_id=2016092600603929&body=phone&buyer_id=2088102169336131&gmt_create=2016-10-30 17:50:12&gmt_payment=2016-10-30 17:50:13&notify_id=f3690a28885f22b325723e5f6bc6df4h06&notify_time=2016-10-30 17:50:13&notify_type=trade_status_sync&out_trade_no=2016102912137&seller_id=2088102177423285&subject=phone8&total_amount=20.21&trade_no=2016103021001004130200039530&trade_status=TRADE_SUCCESS";
+
+            bool istrue = AlipaySignature.RSACheckContent(signcontent, sign, publickey, "utf-8", "RSA", false);
+
+            Assert.IsTrue(istrue);
         }
     }
 }
